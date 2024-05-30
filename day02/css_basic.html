@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS 기본</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* CSS 기본 문법
+            선택자 {키:값; 키:값; 키:값; } 
+            * - 모든 태그
+        */
+        h1 {
+            color: crimson;background-color: aliceblue;
+        }
+
+        h2 {
+            color: aquamarine;
+        }
+
+        h1, h2 {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        #header {
+            width: 600px; margin: 0 auto;
+            background-color: lightcyan;
+        }
+
+        #section{
+            width: 600px; margin: 0 auto;
+            overflow: hidden;   /* 내 사이즈가 600인데 자식 개체 사이즈가 600을 넘어가면 잘라버린다.*/
+        }
+
+        #content{
+            width: 400px; height: 200px; float:left;
+            background-color: lightgreen;
+        }
+
+        #aside{
+            width: 200px; height: 100px; float: right;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .favorite{
+            color:cornflowerblue;
+        }
+
+        .options {
+            background-color: black;
+        }
+        /* 속성 선택자 */
+        input[type="text"] {background-color: lightcoral;}
+        input[type="password"] {background-color: khaki;}
+        input[type="submit"] {background-color: lightgreen;}
+
+        /* 후손 선택자 */
+        #header > #nav{ color: darkcyan;}
+
+        /* 자손 선택자 */
+        #section > div > h3 {font-style: italic;}
+
+        /* 반응 선택자 */
+        h1:hover {color: yellow;}
+        h1:active {color :black;} 
+
+        /* 상태 선택자 */
+        input:disabled {background-color: gray;}
+
+        /* 구조 선택자 */
+        .second-nav > ul {overflow: hidden;}
+        .second-nav li {
+            list-style: none; color: e6e6e6;
+            float: left; padding: 10px;
+        }
+
+        .second-nav li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        .second-nav li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .second-nav li:nth-child(2n+1) {
+            background-color: aquamarine;
+        }
+
+        .second-nav li:nth-child(2n) {
+            background-color: brown;
+        }
+        /* border, */
+        .box {
+            width: 100px; height: 100px;
+            background-color: lightpink;
+            border: 20px dashed gainsboro;
+            /* 위의 border와 동일한 속성
+            border-width: 20px;
+            border-style: dashed;
+            border-color: gainsboro;
+            */
+            margin: 20px; padding: 30px;
+            border-radius: 50px;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS BASIC</h1>
+    <h2>Basic 문법</h2>
+    <hr>
+    <div>
+        <ul>
+            <li class="favorite options">기본 선택자</li>
+            <li>아이디, 클래스 선택자</li>
+            <li>속성 선택자</li>
+            <li class="favorite">후손 선택자</li>
+        </ul>
+    </div>
+    <div id="header">
+        <h3 class="favorite">#header 영역</h3>
+        <div id="nav">
+            <h4>Navigation(메뉴) 영역</h4>
+        </div>
+        <div>
+            <h4>옵션</h4>
+        </div>
+    </div>
+    <div id="section">
+        <!-- id 같은 값을 한 페이지에 두 개 넣으면 안 됨! -->
+        <div id="content">
+            <h3>#content 영역</h3>
+        </div>
+        <div id="aside">
+            <h3>#aside 영역</h3>
+            <ul id="menu">
+                <li><a href="#">영한소개                                                                                                                        </a></li>
+                <li>영한컬럼</li>
+                <li>영한프로젝트</li>
+            </ul>
+        </div>
+    </div>
+    <form>
+        <input type="text" disabled="disabled"><br>
+        <input type="password"><br>
+        <input type="submit">
+    </form>
+    <div class="second-nav">
+        <ul>
+            <li><a href="#">첫 번째 메뉴</a></li>
+            <li>두 번째 메뉴</li>
+            <li>세 번째 메뉴</li>
+            <li>네 번째 메뉴</li>
+            <li>다섯 번째 메뉴</li>
+            <li>여섯 번째 메뉴</li>
+            <li>일곱 번째 메뉴</li>
+        </ul>
+    </div>
+    <div class="box">
+        오늘 왜 이렇게 피곤하지?
+        그치만 내일은 금요일.<br>
+        화이팅!!!
+    </div>
+</body>
+</html>
