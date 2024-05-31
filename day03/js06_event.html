@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS 이벤트</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        // var buttonClick = function() {
+        //     alert('버튼클릭2');
+        // }
+        window.onload = function(event) {
+            var btnNormal = document.getElementById('btnNormal');
+            btnNormal.onclick = function(){
+                console.log(event);
+                alert("그래도 가장 일반적인 이벤트처리!");
+            }
+
+            var link = document.getElementById('link');
+            link.onclick = function() {
+                return false;   // 이벤트 제거 ㅠ
+            }   // 링크를 눌러도 네이버창이 안 뜸
+        }
+    </script>
+</head>
+<body>
+    <!-- 인라인 이벤트 or 함수 호출은 이제 쓰지 말 것-->
+    <!-- <button onclick="alert('버튼클릭')">클릭</button> -->
+    <!-- <button onclick="buttonClick()">클릭</button> -->
+    <button id="btnNormal">클릭</button>
+    <a id="link" href="https://www.naver.com" target="_blank">네이버 바로가기</a>
+</body>
+</html>
