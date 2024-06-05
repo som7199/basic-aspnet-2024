@@ -205,4 +205,5 @@ IoT 개발자 과정 ASP.NET 리포지토리
         https://github.com/som7199/basic-aspnet-2024/assets/95500015/bc999710-ae2c-42aa-8b9c-84a86a716f7a
 
 
-   - 개인 웹페이지 클로닝
+   - 개인 프로젝트
+        -  
