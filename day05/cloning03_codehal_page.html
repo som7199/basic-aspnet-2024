@@ -15,6 +15,7 @@
         }
 
         body {
+            /* position: fixed; 이거 안쓰면 리프레시때 위치 틀어짐! */
             width: 100;
             overflow-x: hidden;
             overflow-y: hidden;
@@ -207,16 +208,30 @@
 
         .rotate-btn {
             position: absolute;
-            bottom: 50px; right: 50px;
+            bottom: 50px; right: 100px;
             width: 60px; height: 60px;
-            background-color: #78686e;
+            background-color: #cba9b6;
             border: 2px solid white;
             border-radius: 50%;
             cursor: pointer;
             z-index: 200;
             display: flex;
-            justify-content: center;  /* 가로 중앙 정렬 */
-            align-items : center;   /* 세로 중앙 정렬 */
+            justify-content: center; /* 가로 중앙정렬 */
+            align-items: center; /* 세로 중앙정렬 */
+        }
+
+        .auto-btn {
+            position: absolute;
+            bottom: 50px; right: 30px;
+            width: 60px; height: 60px;
+            background-color: #e7e48b;
+            border: 2px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 200;
+            display: flex;
+            justify-content: center; /* 가로 중앙정렬 */
+            align-items: center; /* 세로 중앙정렬 */
         }
 
         .rotate-btn.active {
@@ -226,7 +241,8 @@
             transition-delay: 0.1s;
         }
 
-        .rotate-btn i {
+        .rotate-btn i,
+        .auto-btn i {
             font-size: 40px;
             color: white;
         }
@@ -370,6 +386,10 @@
         <span class="line"></span>
         <span class="rotate-btn">
             <i class='bx bx-rotate-right'></i>
+        </span>
+
+        <span class="auto-btn">
+            <i class='bx bx-loader'></i>
         </span>
     </div>
 
