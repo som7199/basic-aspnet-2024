@@ -212,3 +212,6 @@ IoT 개발자 과정 ASP.NET 리포지토리
 
 
         - 직원 소개 웹페이지 응용 - (임시)포트폴리오 웹페이지
+          
+            https://github.com/som7199/basic-aspnet-2024/assets/95500015/e2891060-1f2c-46dd-9769-5b8ff6f40997
+
