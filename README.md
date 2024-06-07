@@ -208,5 +208,6 @@ IoT 개발자 과정 ASP.NET 리포지토리
    - 개인 프로젝트
         - 스타벅스 웹페이지 튜토리얼 따라하기
         
+            https://github.com/som7199/basic-aspnet-2024/assets/95500015/292a22e4-9966-4174-9f03-70bdc5305f26
 
 
