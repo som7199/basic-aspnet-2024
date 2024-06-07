@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Drop Card Slider HTML CSS JS | Codehal</title>
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="./css/wd_style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="logo">Som</a>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="box mySwiper">
+            <div class="content swiper-wrapper">
+
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/som.jpg" alt="">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Somin</span>
+                            <span class="profession">SW developer trainee</span>
+                        </div>
+                        <div class="rating">
+                            <i class='bx bxs-star' style="--clr:#ff0f5b"></i>
+                            <i class='bx bxs-star' style="--clr:#ff0f5b"></i>
+                            <i class='bx bxs-star' style="--clr:#ff0f5b"></i>
+                            <i class='bx bx-star' style="--clr:#ff0f5b"></i>
+                            <i class='bx bx-star' style="--clr:#ff0f5b"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/git.png" alt="">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Github</span>
+                        </div>
+                        <button style="--clr:#ff0f5b" onclick="location.href='https://github.com/som7199/basic-aspnet-2024'">Click!</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/notion.jpg" alt="">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Notion</span>
+                        </div>
+                        <button style="--clr:#be01fe" onclick="location.href='https://www.notion.so/2-351fc6d850794dc79beb11f433b25bd8'">Click!</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="./images/youtube.png" alt="">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Youtube</span>
+                        </div>
+                        <button style="--clr:#fea401" onclick="location.href='https://youtu.be/DIE2yLbtPXc?feature=shared'">Click!</button>
+                    </div>
+                </div>
+
+            
+            
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/wd_script.js"></script>
+    </body>
+    </html>
