@@ -46,7 +46,7 @@ namespace BasicDBHandling.Controllers
         // GET: Category/Create
         public IActionResult Create()
         {
-            return View();
+            return View();      // 메서드와 동일한 이름의 웹페이지 Category/Create.chtml 을 리턴!
         }
 
         // POST: Category/Create

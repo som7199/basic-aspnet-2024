@@ -240,16 +240,16 @@ IoT 개발자 과정 ASP.NET 리포지토리
         - 크로스 플랫폼 , OS에 종속받지 않음
         - 성능!
     
-    - ASP.NET Core
-        - ASP.NET Webforms  2000년도 초반에 나오다가 시장된 웹사이트 개발기술
+    - ASP.NET 종류
+        - ~~ASP.NET Webforms  2000년도 초반에 나오다가 시장된 웹사이트 개발기술~~
         - **ASP.NET Core  웹앱(MVC) - 가장 기본적인 프론트엔드(HTML,CSS,JS (.cshtml확장자)) + 백엔드(C# .aspx.cs) 웹개발**
         - **ASP.NET Core 웹 API - 데이터포털, 네이버 , 카카오 , 영화 API 사이트를 만드는 백엔드(프론트엔드가 없어서 화면이 없음)**
         - Js(Vue, Angular, React) 프론트엔드 + ASP.NET Core 백엔드
-        - Edge용 웹 드라이버 테스트 - 엣지 브라우저에 종속된 테스트용 프로젝트
+        - ~~Edge용 웹 드라이버 테스트 - 엣지 브라우저에 종속된 테스트용~~
         - ASP.NET Cor gRPC 서비스 - 고성능 원격프로시저호출(스트리밍 호출) 서비스
         - Blazor - js 프론트엔드를 따라서 C# 컴포넌트 기반으로 개발하는 웹개발 방식 웹사이트 개발
         - Razor - 프론트엔드 개발에 C# 코드가 특화되서 사용되는 웹사이트 개발방식
-        - .NET Aspire - Blazor 프론트엔드 + Redis + 웹 APO 백엔드
+        - .NET Aspire - Blazor 프론트엔드 + Redis + 웹 API 백엔드
     
     - 참조사이트
         - https://learn.microsoft.com/ko-kr/aspnet/core/?view=aspnetcore-3.1
