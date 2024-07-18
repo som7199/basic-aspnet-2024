@@ -37,7 +37,7 @@ namespace MyPortfolio.Migrations
                     b.Property<int>("Hit")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("ModeDate")
+                    b.Property<DateTime?>("ModDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -48,19 +48,19 @@ namespace MyPortfolio.Migrations
                     b.Property<DateTime>("RegDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
                     b.HasKey("Id");
 
-                    b.ToTable("board");
+                    b.ToTable("Board");
                 });
 #pragma warning restore 612, 618
         }
