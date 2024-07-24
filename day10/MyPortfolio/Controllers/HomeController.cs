@@ -13,11 +13,13 @@ namespace MyPortfolio.Controllers
             _logger = logger;
         }
 
+        [HttpGet]   // Default라서 생략 가능, 화면 요청
         public IActionResult Index()
         {
             return View();
         }
-
+        
+        [HttpGet]   // 화면 요청
         public IActionResult Privacy()
         {
             return View();
@@ -27,6 +29,19 @@ namespace MyPortfolio.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        // 회원 로그인 새로 추가
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
         }
     }
 }
