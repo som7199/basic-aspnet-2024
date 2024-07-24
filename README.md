@@ -419,7 +419,10 @@ IoT 개발자 과정 ASP.NET 리포지토리
                   WHERE base.rowNum BETWEEN 1 AND 10 -- 1과 10에 10씩 더하면 다음 페이지를 조회 쿼리
                 ```
             3. Index() 내 로직 수정
-            4. Views/Board/Index.cshtml 화면코드 수정         
+            4. Views/Board/Index.cshtml 화면코드 수정
+                       
+                https://github.com/user-attachments/assets/94b8011a-cf0a-448e-af23-c2f181b07acd
+
 
     4. 검색
         - FromSqlRaw() 메서드 변경
