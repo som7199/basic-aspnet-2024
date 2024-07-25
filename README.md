@@ -470,7 +470,8 @@ IoT 개발자 과정 ASP.NET 리포지토리
         4. HomeController.cs Login Post 메서드 작성
         5. Logout Get 메서드 추가
 
-        **로그인 화면 녹화**
+        https://github.com/user-attachments/assets/4ce8f18f-9461-4b8a-a588-06e54e563f0c
+
 
     2. 게시판 글 오류 수정
         1. Board.cs에 있는 Name, UserID 삭제, User는 User?(Nullable)로 변경, UserName을 virtual로 추가
