@@ -61,6 +61,10 @@ namespace MyPortfolio.Controllers
                 if (FilePath != null && FilePath.Length > 0)
                 {
                     var fileUrl = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", FilePath.FileName);
+
+                    // TODO
+                    // 이미지 파일 이름이 중복되지 않도록 랜덤으로 변경
+                    // FileStream으로 위 경로에 파일 저장
                 }
 
                 _context.Add(project);

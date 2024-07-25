@@ -435,8 +435,7 @@ IoT 개발자 과정 ASP.NET 리포지토리
         - Create.cshtml, Edit.cshtml은 동일하게 작업
         - NuGet패키지 Westwind.AspNetCore.Markdown 검색
 
-        - **Board 완성되면 내껄로 붙여넣기**
-        <img src="https://raw.githubusercontent.com/hugoMGSung/basic-aspnet-2024/main/images/an0006.png" width="600">        
+        <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0003.png" width="600">        
 
 ## 12일차
 - ASP.NET Core 포트폴리오 웹사이트, MyPortfolio
