@@ -610,7 +610,7 @@ IoT 개발자 과정 ASP.NET 리포지토리
                 - .NET CLR Version > No Managed... 선택
                 - IIS 재시작
 
-            <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0006.png" width="500">
+                <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0006.png" width="500">
 
         17. 다음부터는
             - Visual Studio 개발
