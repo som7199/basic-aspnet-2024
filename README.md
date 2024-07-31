@@ -639,7 +639,8 @@ IoT 개발자 과정 ASP.NET 리포지토리
         - /Views/Project/Edit.cshtml에 @model MyPortfolio.Models.Project 를 @model MyPortfolio.Models.TempProject로 변경
         - 및 나머지 내용 수정
         - 실행확인
-            <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0007.png" width="500">
+
+        <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0007.png" width="500">
 
 
     3. Contact 메일보내기(네이버 연동)
@@ -730,7 +731,8 @@ IoT 개발자 과정 ASP.NET 리포지토리
             ```
 
         - 실행결과
-            <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0008.png" width="500">
+
+        <img src="https://raw.githubusercontent.com/som7199/basic-aspnet-2024/main/images/an0008.png" width="500">
 
     4. 부트스트랩 템플릿 커스터마이징, 자기 포트폴리오 사이트 만들기
         - 구글에서 부트스트랩 템플릿 검색
