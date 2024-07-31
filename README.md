@@ -716,19 +716,19 @@ IoT 개발자 과정 ASP.NET 리포지토리
         ```
 
         - /Views/Board/Index.cshtml에 아래의 코드 추가
-            ```html
-                var num = ViewBag.TotalCount - ((page - 1) * 10); // 전체 게시글 수를 (현재페이지-1)값과 페이지당 게시글수 곱을 빼기
-            }
+        ```html
+            var num = ViewBag.TotalCount - ((page - 1) * 10); // 전체 게시글 수를 (현재페이지-1)값과 페이지당 게시글수 곱을 빼기
+        }
 
-            <partial name="_Notification" />
-            ```
+        <partial name="_Notification" />
+        ```
 
-            - /BoardController.cs Create() Post 메서드에 아래의 코드 추가
-            ```cs
-            await _context.SaveChangesAsync();
-            // 이 부분 추가
-            TempData["success"] = "성공적으로 저장했습니다.";
-            ```
+        - /BoardController.cs Create() Post 메서드에 아래의 코드 추가
+        ```cs
+        await _context.SaveChangesAsync();
+        // 이 부분 추가
+        TempData["success"] = "성공적으로 저장했습니다.";
+        ```
 
         - 실행결과
 
